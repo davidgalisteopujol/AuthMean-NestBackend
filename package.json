@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "serve build -s -n -L -p $PORT",
+    "start": "node dist/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -32,8 +32,7 @@
     "class-validator": "^0.14.0",
     "mongoose": "^7.3.4",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1",
-    "serve": "^14.2.0"
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
